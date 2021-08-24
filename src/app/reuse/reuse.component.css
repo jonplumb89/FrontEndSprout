@@ -1,0 +1,103 @@
+#contentContainer{
+    background-color: #e6eae1;
+    margin: auto;
+    width: 90%;
+}
+
+#bodyContainer {
+    background-color: #e6eae1;
+    margin: 0;
+}
+
+.articleContainer {
+    margin: 0px 10px 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.reuseArticle {
+    text-align: center;
+    width: 100%;
+}
+
+.reuseLink {
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background-color: #50833c;
+    border-width: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.reuseImage {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+.reuseTitle {
+    padding-top: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width:480px) {
+    #contentContainer{
+        width:80%;
+    }
+
+    .reuseArticle{
+        font-size: 20px;
+        width: 70%;
+        margin-left: 15px;
+        text-align: left;
+        margin: auto;
+    }
+
+    .reuseImage{
+        display: flex;
+        width: 100px;
+        margin-right: 0px;
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+
+    .reuseLink{
+        margin: 10px 0px 0px 0px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #contentContainer{
+        width:70%;
+    }
+    .reuseTitle{
+        font-size: 40px;
+    }
+
+    .articleContainer{
+        padding: 15px;
+    }
+
+    .reuseArticle{
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .reuseLink{
+        position: relative;
+        top: 30px;
+        margin-top: 0px;
+        margin: auto;
+        width: 20%;
+        border-radius: 20px;
+        padding: 5px;
+        z-index: 0;
+    }
+}

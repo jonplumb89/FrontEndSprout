@@ -1,0 +1,30 @@
+<div id="bodyContainer">
+    <div id="contentContainer">
+        <h1>
+            Where and What to Recycle
+        </h1>
+        <p>
+            Did you know: {{ recyclingFact }}
+        </p>
+        <div id="locationForm">
+            <input [(ngModel)]="ZIP" placeholder="Enter your zip code to begin!" id="locationInput" (keydown.enter)="requestLatLonAndLocation()">
+            <button (click)="requestLatLonAndLocation()" id="locationButton">Find a Location</button>
+        </div>
+        <p *ngIf="errorMessage" id="errorMessage">
+            {{ errorMessage }}
+        </p>
+        <div *ngFor="let location of responseArrayObjects; index as i" id="locationContainer">
+            <div id="locationInfo">
+                <h3 class="locationName">
+                    {{ location[0].description }}
+                </h3>
+                Address: {{ location[0].address }} {{ location[0].city }}, {{ location[0].province }} {{ location[0].postal_code }} <br/>
+                Phone: {{ location[0].phone }} <br />
+                Hours: {{ location[0].hours }} <br />
+            </div>
+            <a href="{{ openInMaps(location[0].latitude, location[0].longitude) }}" target="_blank" id="buttonLink">
+                <button id="viewButton">View in Maps</button>
+            </a>
+        </div>
+    </div>
+</div>

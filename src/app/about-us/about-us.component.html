@@ -1,0 +1,37 @@
+<div id="team">
+  <div id="btnContainer">
+    <button id="view-all" (click)="viewAll()">{{message}}</button>
+  </div>
+  <div class="teammates">
+    <img src="assets/img/jPlumb.jpeg" (click)="toggleJon()" >
+    <div class="info" *ngIf="jonInfoShown">
+      <p>Jon Plumb has been creating dishes for the last 8 years. After witnessing the joy and excitement his brother experienced learning to code, he decided to make a career change into technology. He enjoys not only cooking, but also eating 24/7, drinking coffee through all hours of the day and playing musical instruments.</p>
+      <p><a href="https://www.linkedin.com/in/jonathon-plumb/" class="fa fa-linkedin-square"></a></p>
+    </div>   
+  </div>
+
+  <div class="teammates">
+    <img src="assets/img/dLeasure.jpeg" (click)="toggleDave()">
+    <div class="info" *ngIf="daveInfoShown">
+      <p>Dave Leasure graduated from Wayne State University with a Bachelor's in Mathematics. He's spent 5 years in the software world and is currently a Product Manager at Ford. In his spare time, he likes gardening and video games.</p>
+      <p><a href="https://www.linkedin.com/in/dleasure/" class="fa fa-linkedin-square"></a></p>
+    </div>
+  </div>
+
+  <div class="teammates">
+    <img src="assets/img/jb.jpeg" (click)="toggleJess()">
+    <div class="info" *ngIf="jessInfoShown">
+      <p>Jess Billingslea graduted from the University of Michigan-Dearborn with a BA in Communication and a minor in Marketing. Jess has been passionate about technology since she was able to explore Windows 95. In her spare time she enjoys watching anime, spending time with her two dogs and traveling.</p>
+      <p><a href="https://www.linkedin.com/in/jessica-billingslea/" class="fa fa-linkedin-square"></a></p>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div id="canvas">
+  <p id="canvasIntro">Click the empty box below to grow a flower garden.</p>
+  <div id="app">
+    <canvas id="flower" width="350px" height="300px" style="border:1px solid #000000;"></canvas>
+    <button id="clearBtn">Clear canvas</button> 
+  </div>
+</div>

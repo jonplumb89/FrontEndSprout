@@ -1,0 +1,158 @@
+img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  margin-bottom: 20px;
+  border-radius: 100%;
+}
+
+#team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e6eae1;
+  width: 90%;
+  margin: auto;
+}
+
+#btnContainer{
+  width: 100%;
+  align-items: flex-end;
+  text-align: end;
+}
+
+#view-all{
+  width: 20%;
+}
+
+.teammates{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 10px 0px 10px;
+  width: 44%;
+  justify-content: center;
+  
+}
+
+.info{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+p{
+  margin: 0
+}
+
+button{
+  margin-top: 30px;
+  width: 100%;
+  color: white;
+  border-radius: 24px;
+  background-color: #50833c;
+}
+
+hr{
+  margin: 0;
+  padding-top: 20px;
+  background-color: #e6eae1;
+}
+
+#canvas{
+  width: 90%;
+  margin: auto;
+  background-color: #e6eae1;
+}
+
+#canvasIntro{
+  margin-top: 0px;
+  padding-top: 15px 10px 0px 10px;
+  text-align: center;
+}
+
+#clearBtn{
+  margin-top: 0px;
+}
+
+#app{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flower{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fa {
+  padding: 5px 5px 0px 0px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-linkedin-square {
+  color: #0e76a8;
+}
+
+@media only screen and (min-width: 480px){
+  img{
+    height: 150px;
+    width: 150px;
+  }
+
+  #team{
+    width: 80%;
+  }
+
+  button{
+    font-size: 16px;
+  }
+
+  #canvas{
+    width: 80%;
+  }
+
+  .info, #canvasIntro{
+    font-size: 16px;
+  }
+  .fa {
+    font-size: 25px;
+  }
+} 
+
+@media only screen and (min-width: 768px){
+  img{
+    height: 200px;
+    width: 200px;
+  }
+
+  #team {
+    width: 70%;
+  }
+
+  button{
+    font-size: 18px;
+  }
+
+  #canvas{
+    width: 70%;
+  }
+
+  #clearBtn{
+    width: 70%;
+  }
+
+  .info, #canvasIntro{
+    font-size: 18px;
+  }
+
+  .fa{
+    font-size: 30px;
+  }
+} 

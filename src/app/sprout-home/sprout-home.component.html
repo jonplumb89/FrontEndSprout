@@ -1,0 +1,43 @@
+<div id="banner">
+  <nav role="navigation">
+    <div id="menuToggle">
+
+      <input type="checkbox" id="menuButton" />
+      
+      <!-- Hamburger Menu Icons -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <ul id="menu">
+        <a (click)="optionClicked()" routerLink="home"><li>Home</li></a>
+        <a (click)="optionClicked()" routerLink="reduce"><li>Reduce</li></a>
+        <a (click)="optionClicked()" routerLink="reuse"><li>Reuse</li></a>
+        <a (click)="optionClicked()" routerLink="recycle"><li>Recycle</li></a>
+        <a (click)="optionClicked()" routerLink="AboutUs"><li>About Us</li></a>
+      </ul>
+    </div>
+  </nav>
+  <ul id="bigMenu">
+    <a (click)="optionClicked()" routerLink="home"><li>Home</li></a>
+    <a (click)="optionClicked()" routerLink="reduce"><li>Reduce</li></a>
+    <a (click)="optionClicked()" routerLink="reuse"><li>Reuse</li></a>
+    <a (click)="optionClicked()" routerLink="recycle"><li>Recycle</li></a>
+    <a (click)="optionClicked()" routerLink="AboutUs"><li>About Us</li></a>
+  </ul>
+  <div id="logo">Sprout</div>
+</div>  
+<p>
+    
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+  some content
+</p>
+<p>
+  
+</p>
+<router-outlet></router-outlet>

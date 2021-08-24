@@ -1,0 +1,106 @@
+#contentContainer, #articleShowContainer {
+  background-color: #e6eae1;
+  margin: auto;
+  width: 90%;
+}
+
+#bodyContainer {
+  background-color: #e6eae1;
+  margin: 0;
+}
+
+#articleContainer {
+  margin: 0px 10px 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+#articleDes {
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+#readButton {
+  width: 100%;
+  padding: 5px;
+  color: white;
+  background-color: #50833c;
+  border-width: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.backButton {
+  color: white;
+  background-color: #50833c;
+  border-radius: 20px;
+}
+
+#articleShowing {
+  margin: 0px 20px 20px 20px;
+}
+
+#reduceImg {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 480px) {
+  #contentContainer{
+    width: 80%;
+  }
+
+  #articleDes {
+    font-size: 20px;
+    width: 70%;
+    margin-left: 15px;
+    text-align: left;
+    margin: auto;
+  }  
+
+  #reduceImg{
+    display: flex;
+    width: 100px;
+    margin-right: 0px;
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+  #readButton {
+    margin: 10px 0px 0px 0px;
+    font-size: 16px;
+   }  
+}
+@media only screen and (min-width: 768px) {
+  #contentContainer{
+    width:70%;
+  }
+  h1{
+    font-size: 40px;
+  }
+
+  #articleDes {
+    font-size: 25px;
+    padding: 5px;
+  }
+  #readButton {
+    position: relative;
+    top: 15px;
+    margin-top: 0px;
+    margin: auto;
+    width: 20%;
+    border-radius: 20px;
+    padding: 5px;
+   }  
+}

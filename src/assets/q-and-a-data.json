@@ -1,0 +1,90 @@
+[{
+    "id": "1",
+    "question": "Which item does not belong in the recycling bin?",
+    "answer": "Laundry Detergent Bottle",
+    "others": [
+        "Plastic Milk Jug",
+        "Plastic Soda Bottle"
+    ]
+},
+{ 
+    "id": "2",
+    "question": "Which aluminum item is not recyclable?",
+    "answer": "Pots and Pans",
+    "others": [
+        "Soda Cans",
+        "Aluminum Foil"
+    ]
+},
+{
+    "id": "3",
+    "question": "When is America Recycles Day?",
+    "answer": "November 15",
+    "others": [
+        "July 4",
+        "February 14"
+    ]
+},
+{
+    "id": "4",
+    "question": "What is the main natural resource to make plastic?",
+    "answer": "Oil",
+    "others": [
+        "Coal",
+        "Iron",
+        "Sand"
+    ]
+},
+{
+    "id": "5",
+    "question": "Is clothing recyclable?",
+    "answer": "No",
+    "others": [
+        "Yes"
+    ]
+},
+{
+    "id": "6",
+    "question": "Should you bag your recyclables?",
+    "answer": "No",
+    "others": [
+        "Yes"
+    ]
+},
+{
+    "id": "7",
+    "question": "Which of the following can you not recycle?",
+    "answer": "Plastic Wrap",
+    "others": [
+        "Cardboard",
+        "Glass Jars",
+        "Cartons"
+    ]
+},
+{
+    "id": "8",
+    "question": "Which of the following is important before recycling?",
+    "answer": "Emptying all containers",
+    "others": [
+        "Taking labels off of containers",
+        "Cutting up plastics"
+    ]
+},
+{
+    "id": "9",
+    "question": "Is styrofoam recyclable?",
+    "answer": "No",
+    "others": [
+        "Yes"
+    ]
+},
+{
+    "id": "10",
+    "question": "Which is the most important of the recycling heirarchy?",
+    "answer": "Reducing",
+    "others": [
+        "Reusing",
+        "Recycling"
+    ]
+}
+]

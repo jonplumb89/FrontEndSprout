@@ -1,0 +1,165 @@
+html {
+   width: 100%;
+}
+
+#page {
+   width: 100%;
+}
+
+#image {
+   transition: 1s;
+   width: 80%;
+   /* left: 50%; */
+   /* transform: translateX(-50%); */
+   /* height: 350px; */
+   /* z-index: 1; */
+   /* position: absolute; */
+   /* margin: auto; */
+   top: 50px;
+}
+
+.rotateToReduce {
+   -ms-transform: rotate(120deg);
+   -webkit-transform: rotate(120deg);
+   transform: rotate(120deg);
+}
+ 
+ .rotateToReuse {
+   -ms-transform: rotate(240deg);
+   -webkit-transform: rotate(240deg);
+   transform: rotate(240deg);
+   padding-left: - 10px;
+}
+
+.rotateToRecycle {
+   -ms-transform: rotate(0deg);
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+}
+
+.spins {
+   /* margin-left: 12%; */
+   /* margin-top: 20%; */
+   /* z-index: 1; */
+   /* margin: auto; */
+   width: 100%;
+   transform: translateX(10%);
+}
+
+.tree {
+   position: absolute;
+   width: 40%;
+   /* height: 150px; */
+   z-index: 2;
+   /* margin: auto; */
+   left: 50%;
+   transform: translateX(-50%);
+   top: 6em;
+}
+
+.Pic {
+   position: absolute;
+   z-index: 2;
+   width: 100%;
+}
+
+.componentButton {
+   position: relative;
+   display: inline-block;
+   /* background-color: #303a2c; */
+   border-radius: 10px;
+   width: 25%;
+   /* height: 50px; */
+   z-index: 3;
+   color: #f5f5f5;
+   font-family: 'Caveat', cursive;
+   font-size: 1.5em;
+   /* bottom: 20%; */
+   /* margin-left: 36%; */
+}
+
+.routeToComponentButton {
+   position: relative;
+   /* display: inline-block; */
+   background-color: #303a2c;
+   border-radius: 10px;
+   /* width: 25%; */
+   /* height: 50px; */
+   z-index: 3;
+   color: #f5f5f5;
+   font-family: 'Caveat', cursive;
+   font-size: 1.1em;
+   /* bottom: 20%; */
+   /* margin-left: 36%; */
+   margin: 5px 0px 0px 0px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+button:focus {
+   outline:0;
+}
+
+#buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   /* height: 55px; */
+};
+
+#routingButtons {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+
+#activeFacts {
+   text-align: center;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+@media only screen and (min-width:480px) {
+
+   .componentButton {
+      width: 100px;
+      margin: 10px;
+   }
+
+   #buttons {
+      justify-content: center;
+   }
+   
+   .spins {
+      /* left: 50%; */
+      width: 350px;
+      margin: auto;
+      transform: translateX(0%);
+   }
+  
+   #image {
+      /* transition: 1s; */
+      width: 350px;
+      height: 350px;
+      /* z-index: 1;
+      position: absolute; */
+   }
+  
+   .tree {
+      /* position: absolute; */
+      width: 200px;
+      /* height: 300px; */
+      z-index: 2;
+      /* margin-left: 33%;
+      margin-top: -10%; */
+   }
+}
+

@@ -1,0 +1,19 @@
+<div class="quiz-container">
+    <div *ngIf="_displayTitle" class="start" (click)="startQuiz()">Start Quiz!</div>
+    <div *ngIf="!_displayTitle && !quizComplete" id="quiz">
+        <div class="rightAnswer" *ngIf="previousAnswerStatus">Last Question Result: {{previousAnswerStatus}}</div>
+        <div class="rightAnswer">Score: {{_numberCorrect}}/{{ numOfQuestionsAsked }}</div>
+        <div class="question">{{_questionAndAnswer.question}}</div>
+        <div class="choices">
+            <div class="choice" *ngFor="let answer of _answers" (click)="submitAnswer(answer)">{{answer}}</div>
+            
+        </div>
+    </div> 
+    <div *ngIf="quizComplete" class="quizComplete">
+        Final Score: {{_numberCorrect}}/{{ numOfQuestionsAsked }} <br />
+        <button (click)="initalize()" id="startOverButton">Start Over</button>
+    </div>
+</div>
+
+
+<canvas id="canvas"></canvas>
