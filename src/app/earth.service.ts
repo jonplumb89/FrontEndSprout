@@ -17,6 +17,10 @@ export class EarthService {
     return this.http.get("http://localhost:3500/location/" + latitude + "/" + longitude);
   };
 
+  getNothing() {
+    return;
+  }
+
   getLocationDetails(locationId) {
     // return this.http.get("http://localhost:3500/locationInfo/" + locationId);
     // console.log(locationId);
