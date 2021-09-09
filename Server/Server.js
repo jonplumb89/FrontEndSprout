@@ -8,6 +8,10 @@ app.use(cors());
 
 app.use(routes);
 
+app.get('/', (req, res) => {
+    res.send('hello you hit me')
+})
+
 app.listen(port, () => {
     console.log("Server Running");
 });
