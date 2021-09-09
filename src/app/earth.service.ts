@@ -9,18 +9,22 @@ export class EarthService {
   constructor(private http: HttpClient) { }
 
   getUsersLatLon(country, ZIP) {
-    return this.http.get("http://localhost:3500/latLon/" + country + "/" + ZIP);
+    return this.http.get("https://fierce-oasis-61354.herokuapp.com/latLon/" + country + "/" + ZIP);
     // })
   };
 
   getLocationFromLatLon(latitude, longitude) {
-    return this.http.get("http://localhost:3500/location/" + latitude + "/" + longitude);
+    return this.http.get("https://fierce-oasis-61354.herokuapp.com/location/" + latitude + "/" + longitude);
   };
 
+  getNothing() {
+    return;
+  }
+
   getLocationDetails(locationId) {
-    // return this.http.get("http://localhost:3500/locationInfo/" + locationId);
+    // return this.http.get("https://fierce-oasis-61354.herokuapp.com/locationInfo/" + locationId);
     // console.log(locationId);
-    const locationObject = this.http.get("http://localhost:3500/locationInfo/" + locationId);
+    const locationObject = this.http.get("https://fierce-oasis-61354.herokuapp.com/locationInfo/" + locationId);
     return locationObject;
     // console.log("locationObject = " + locationObject);
     // const objectKeys = Object.keys(locationObject);
@@ -36,12 +40,12 @@ export class EarthService {
 
   //function to get Reduce articles from Proxy Server
   getReduceArticles() {
-    return this.http.get("http://localhost:3500/reduce/");
+    return this.http.get("https://fierce-oasis-61354.herokuapp.com/reduce/");
   };
 
   //function to get Reduce article details from Proxy Server
   getArticleDetails(reduceURL) {
     let decodeURL = decodeURI(reduceURL);
-    return this.http.get("http://localhost:3500/reduce/details/" + decodeURL);
+    return this.http.get("https://fierce-oasis-61354.herokuapp.com/reduce/details/" + decodeURL);
   }
 };
